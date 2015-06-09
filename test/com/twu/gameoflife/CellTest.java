@@ -6,11 +6,20 @@ import static org.junit.Assert.*;
 
 public class CellTest {
     @Test
-    public void specToCheckTheStateOfCell(){
-        Cell cell = new Cell();
+    public void specToCheckTheStateOfCellWhenDead(){
+        Cell cell = new Cell(false);
 
-        boolean actualState = cell.state();
+        char actualState = cell.state();
 
-        assertFalse(actualState);
+        assertEquals(actualState, 'D');
+    }
+
+    @Test
+    public void specToCheckTheStateOfCellWhenAlive(){
+        Cell cell = new Cell(true);
+
+        char actualState = cell.state();
+
+        assertEquals(actualState, 'A');
     }
 }
