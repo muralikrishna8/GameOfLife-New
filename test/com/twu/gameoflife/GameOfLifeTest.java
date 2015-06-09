@@ -9,11 +9,10 @@ import static org.junit.Assert.*;
 public class GameOfLifeTest {
     @Test
     public void specToCheckTheInitialStateOfTheGrid(){
-        ArrayList<Boolean> rows = new ArrayList<>();
-        ArrayList<ArrayList<Boolean>> grid = new ArrayList<>();
+        ArrayList<Cell> rows = new ArrayList<>();
+        ArrayList<ArrayList<Cell>> grid = new ArrayList<>();
 
 
         GameOfLife gameOfLife = new GameOfLife();
     }
-
 }
